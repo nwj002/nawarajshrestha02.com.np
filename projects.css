@@ -1,0 +1,122 @@
+.projects-section {
+    padding: 20px 5px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.projects-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.projects-wrapper h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px 35px;
+    /* 40px row and 40px column spacing */
+    justify-items: center;
+    padding: 20px 0;
+}
+
+
+.project-card {
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    max-width: 350px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-image-wrapper {
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-image-wrapper img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.project-card:hover .project-image-wrapper img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-content h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.project-content p {
+    font-size: 15px;
+    color: #555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    text-align: justify;
+}
+
+
+.github-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #a5bf6b;
+}
+
+.view-more-wrapper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-more-btn {
+    display: inline-block;
+    background-color: var(--accent);
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-btn:hover {
+    background-color: #a5bf6b;
+    transform: translateY(-3px);
+}

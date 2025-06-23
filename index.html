@@ -4,20 +4,24 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>nawaraj </title>
+    <title>nawaraj shrestha </title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/n.svg">
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="projects.css" />
 
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <header>
         <nav>
             <div class="logo">Nawaraj Shrestha</div>
             <ul class="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
+                <li><a href="#work">Projects</a></li>
             </ul>
             <div class="social-icons">
                 <a href="https://github.com/nwj002"><img style="width: 28px;" src="/assets/icons/github-mark.svg"
@@ -29,6 +33,7 @@
         </nav>
     </header>
 
+    <!-- Home section  -->
     <section class="home-section" id="home">
         <div class="home-container">
             <!-- Left Section -->
@@ -46,12 +51,126 @@
 
             <!-- Right Section -->
             <div class="home-right">
-                <img src="/assets/1.jpg" alt="Nawaraj Profile" class="profile-img" />
+                <img src="/assets/2.jpg" alt="Nawaraj Profile" class="profile-img" />
             </div>
         </div>
     </section>
 
+    <!-- about me section  -->
+    <section id="about" class="about-section">
+        <div class="about-wrapper">
+            <!-- About Me -->
+            <h2>About Me</h2>
+            <p class="about-text">
+                I'm <b>Nawaraj Shrestha</b> (Sudarshan), a computing graduate with a strong interest in problem-solving
+                and
+                continuous learning. Passionate about UX/UI design, Web development & Mobile App Development, always
+                seeking opportunities to
+                grow skills and gain hands-on experience. Eager to keep learning and make a positive impact in the
+                field.
+            </p>
 
+            <!-- Technical Skills Title -->
+            <h3 style="margin-top: 40px;">Technical Skills</h3>
+
+            <div class="skills-grid-centered">
+                <!-- Programming Languages -->
+                <img src="https://img.icons8.com/color/48/java-coffee-cup-logo.png" alt="Java" title="Java" />
+                <img src="https://img.icons8.com/color/48/python.png" alt="Python" title="Python" />
+                <img src="https://img.icons8.com/color/48/javascript.png" alt="JavaScript" title="JavaScript" />
+                <img src="https://img.icons8.com/color/48/flutter.png" alt="Flutter" title="Flutter" />
+
+                <!-- Web Development -->
+                <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="HTML5" title="HTML5" />
+                <img src="https://img.icons8.com/color/48/css3.png" alt="CSS3" title="CSS3" />
+                <img src="https://img.icons8.com/color/48/react-native.png" alt="React" title="React" />
+                <img src="https://img.icons8.com/color/48/nodejs.png" alt="Node.js" title="Node.js" />
+                <img src="https://img.icons8.com/color/48/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+
+                <!-- Databases -->
+                <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="MySQL" title="MySQL" />
+                <img src="https://img.icons8.com/color/48/mongodb.png" alt="MongoDB" title="MongoDB" />
+                <img src="https://img.icons8.com/color/48/firebase.png" alt="Firebase" title="Firebase" />
+
+                <!-- Version Control -->
+                <img src="https://img.icons8.com/color/48/git.png" alt="Git" title="Git" />
+                <img src="https://img.icons8.com/ios-glyphs/48/github.png" alt="GitHub" title="GitHub" />
+                <!-- Design Tools -->
+                <img src="https://img.icons8.com/color/48/figma--v1.png" alt="Figma" title="Figma" />
+                <img src="https://img.icons8.com/color/48/canva.png" alt="Canva" title="Canva" />
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- projects section  -->
+    <section id="work" class="projects-section">
+        <div class="projects-wrapper">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <!-- Only 3 projects here -->
+
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="/assets/projects/cvd.png" alt="Project 1" />
+                    </div>
+                    <div class="project-content">
+                        <h3>CVD Risk Prediction</h3>
+                        <p>
+                            The Cardiovascular Disease Risk Prediction Application uses machine learning and AI to
+                            estimate 10-year CVD risk, providing personalized health insights via a FastAPI backend,
+                            React frontend, and Gemini AI-powered chatbot.</p>
+                        <a href="https://github.com/nwj002/Cardiovascular_disease_prediction" class="github-btn"
+                            target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="/assets/projects/luxestay.png" alt="Project 1" />
+                    </div>
+                    <div class="project-content">
+                        <h3>LuxeStaye</h3>
+                        <p>LuxeStay is a hotel booking web application that allows users to search, book, and manage
+                            hotel rooms seamlessly. It features secure authentication, real-time availability, payment
+                            integration, and user reviews.</p>
+                        <a href="https://github.com/nwj002/Luxestay" class="github-btn" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="/assets/projects/np.png" alt="Project 1" />
+                    </div>
+                    <div class="project-content">
+                        <h3>booze.np</h3>
+                        <p>booze.np is a full-stack liquor ordering web-based platform built using the MERN stack
+                            (MongoDB, Express.js, React.js, Node.js). This project incorporates multiple security
+                            measures to ensure a secure and user-friendly experience.</p>
+                        <a href="https://github.com/nwj002/booze.np" class="github-btn" target="_blank"
+                            rel="noopener noreferrer">View on GitHub</a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- View More Button -->
+            <div class="view-more-wrapper">
+                <a href="projects.html" class="view-more-btn">View More</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- footer section  -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Nawaraj Shrestha. All rights reserved.</p>
+        </div>
+    </footer>
 
 </body>
 
