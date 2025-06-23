@@ -1,0 +1,205 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --accent: #324E2A;
+    --yellow: #FFF59E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* navbar */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--white);
+}
+
+.logo {
+    padding-left: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--black);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: var(--black);
+
+}
+
+/* home */
+
+.home-section {
+    padding: 60px 30px;
+    /* background-color: #FFF59E; */
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-left {
+    flex: 1 1 500px;
+    padding: 20px;
+}
+
+.home-left h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--accent);
+
+}
+
+.home-left h2 {
+    font-size: 28px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+.home-left p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.resume-button {
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.home-right {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 325px;
+    height: 325px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--accent);
+}
+
+.cursor {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-left h1 {
+        font-size: 28px;
+    }
+
+    .home-left h2 {
+        font-size: 22px;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* wave effects */
+.wave-emoji {
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    font-size: 1.2em;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    10% {
+        transform: rotate(14deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(14deg);
+    }
+
+    40% {
+        transform: rotate(-4deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+
+    60% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}

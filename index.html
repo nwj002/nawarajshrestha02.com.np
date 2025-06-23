@@ -2,48 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-        }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nawaraj </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
 
-        .container {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-
-        .update-message {
-            color: #007bff;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="container">
-        <h1>My Portfolio</h1>
-        <p>This website is currently being updated.</p>
-        <p class="update-message">Please check back soon for new content!</p>
-    </div>
+    <header>
+        <nav>
+            <div class="logo">Nawaraj Shrestha</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://github.com/nwj002"><img style="width: 28px;" src="/assets/icons/github-mark.svg"
+                        alt="github"></a>
+                <a href="https://x.com/"><img style="width: 28px;" src="/assets/icons/x.jpg" alt="Twitter"></a>
+                <a style="padding-right: 20px;" href="https://www.linkedin.com/in/nwj002/"><img style="width: 28px;"
+                        src="/assets/icons/InBug-Black.png" alt="linkedin"></a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="home-section" id="home">
+        <div class="home-container">
+            <!-- Left Section -->
+            <div class="home-left">
+                <h2 style="padding-bottom: 15px;">
+                    Hi There!
+                    <span class="wave-emoji" role="img" aria-label="waving hand">👋🏻</span>
+                </h2>
+
+                <h2>I'm Nawaraj Shrestha </h2>
+                <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+                <p>Based in Nepal</p>
+                <a href="/assets/resume/Nawaraj Shrestha CV.pdf" class="resume-button">Resume</a>
+            </div>
+
+            <!-- Right Section -->
+            <div class="home-right">
+                <img src="/assets/1.jpg" alt="Nawaraj Profile" class="profile-img" />
+            </div>
+        </div>
+    </section>
+
+
+
 </body>
 
 </html>
